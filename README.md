@@ -1,4 +1,6 @@
 # Vue-piuma
+[![codecov](https://codecov.io/gh/lotrekagency/vue-piuma/branch/master/graph/badge.svg)](https://codecov.io/gh/lotrekagency/vue-piuma) [![Build Status](https://travis-ci.org/lotrekagency/vue-piuma.svg?branch=feature%2Ftravis-codecov)](https://travis-ci.org/lotrekagency/vue-piuma)
+
 
 Vue component for Piuma Image optimizer
 
@@ -41,3 +43,5 @@ yarn test
 ## License
 
 MIT &copy; [lotrekagency](https://github.com/lotrekagency)
+
+[![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
