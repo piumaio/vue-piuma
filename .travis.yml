@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+install:
+  - yarn
+
+before_script:
+  - npm i vue
+  - yarn add vue-piuma
+
+build_script:
+  - yarn test
+  - yarn run build
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
