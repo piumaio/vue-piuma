@@ -1,15 +1,13 @@
 {
   "name": "vue-piuma",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Vue component for Piuma Image optimizer",
   "repository": {
-    "url": "https://github.com/Remeic/vue-piuma",
+    "url": "https://github.com/lotrekagency/vue-piuma",
     "type": "git"
   },
   "main": "dist/vue-piuma.common.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
     "test": "test-vue-app",
@@ -18,10 +16,18 @@
     "build:example": "poi build"
   },
   "author": {
-    "name": "Giulio Fagioli",
-    "email": "fagioli.giulio@gmail.com"
+    "name": "Lotrèk Agency",
+    "email": "giulio@lotrek.it"
   },
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "image",
+    "optmizer",
+    "piuma",
+    "javascript",
+    "fast"
+  ],
   "poi": {
     "entry": "example/index.js",
     "dist": "example/dist",
@@ -29,13 +35,8 @@
   },
   "bili": {
     "entry": "src/index.vue",
-    "format": [
-      "cjs",
-      "umd"
-    ],
-    "plugins": [
-      "vue"
-    ],
+    "format": ["cjs", "umd"],
+    "plugins": ["vue"],
     "vue": {
       "css": "dist/test.css"
     }
