@@ -1,9 +1,9 @@
 {
   "name": "vue-piuma",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue component for Piuma Image optimizer",
   "repository": {
-    "url": "Giulio Fagioli/vue-piuma",
+    "url": "https://github.com/Remeic/vue-piuma",
     "type": "git"
   },
   "main": "dist/vue-piuma.common.js",
@@ -28,18 +28,24 @@
     "homepage": "./"
   },
   "bili": {
+    "entry": "src/index.vue",
     "format": [
       "cjs",
       "umd"
-    ]
+    ],
+    "plugins": [
+      "vue"
+    ],
+    "vue": {
+      "css": "dist/test.css"
+    }
   },
   "devDependencies": {
     "bili": "^0.18.2",
+    "chai": "^4.1.2",
     "poi": "^9.3.10",
+    "rollup-plugin-vue": "^2.5.2",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.2"
-  },
-  "dependencies": {
-    "chai": "^4.1.2"
   }
 }
