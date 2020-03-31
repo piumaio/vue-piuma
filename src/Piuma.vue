@@ -9,8 +9,8 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 export default class Piuma extends Vue {
   @Prop({ required: true }) readonly src!: string;
   @Prop({ required: false, default: 100 }) readonly quality!: number;
-  @Prop({ required: false, default: 100 }) readonly height!: number;
-  @Prop({ required: false, default: 100 }) readonly width!: number;
+  @Prop({ required: false, default: 0 }) readonly height!: number;
+  @Prop({ required: false, default: 0 }) readonly width!: number;
   public static serverUrl: string = "https://piumaio";
 
   get url(): string {
