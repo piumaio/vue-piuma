@@ -1,52 +1,51 @@
 {
   "name": "vue-piuma",
-  "version": "1.1.1",
-  "description": "Vue component for Piuma Image optimizer",
-  "repository": {
-    "url": "https://github.com/lotrekagency/vue-piuma",
-    "type": "git"
-  },
-  "main": "dist/vue-piuma.common.js",
-  "files": ["dist"],
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "prepublishOnly": "npm test && npm run build",
-    "test": "test-vue-app",
-    "build": "bili",
-    "example": "poi",
-    "build:example": "poi build"
+    "build": "vue-cli-service build --target lib --name vue-piuma src/main.ts",
+    "build:wc": "vue-cli-service build --target wc --name vue-piuma src/main.ts --dest lib",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
-  "author": {
-    "name": "Lotrèk Agency",
-    "email": "giulio@lotrek.it"
+  "main": "./dist/vue-piuma.common.js",
+  "typings": "types/index.d.ts",
+  "dependencies": {
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.3.0"
   },
-  "license": "MIT",
-  "keywords": [
-    "vue",
-    "image",
-    "optmizer",
-    "piuma",
-    "javascript",
-    "fast"
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "types"
   ],
-  "poi": {
-    "entry": "example/index.js",
-    "dist": "example/dist",
-    "homepage": "./"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piumaio/vue-piuma.git"
   },
-  "bili": {
-    "entry": "src/index.vue",
-    "format": ["cjs", "umd"],
-    "plugins": ["vue"],
-    "vue": {
-      "css": "dist/test.css"
-    }
+  "author": "piumaio <stagi.andrea@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piumaio/vue-piuma/issues"
   },
+  "homepage": "https://github.com/piumaio/vue-piuma",
+  "keywords": [
+    "Image",
+    "Placeholder",
+    "TypeSript",
+    "Vuejs"
+  ],
   "devDependencies": {
-    "bili": "^0.18.2",
-    "chai": "^4.1.2",
-    "poi": "^9.3.10",
-    "rollup-plugin-vue": "^2.5.2",
-    "test-vue-app": "^1.0.0",
-    "vue-test-utils": "^1.0.0-beta.2"
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "@types/jest": "^24.0.19",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-typescript": "^4.2.0",
+    "@vue/cli-plugin-unit-jest": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "typescript": "~3.7.5",
+    "vue-template-compiler": "^2.6.11"
   }
 }
