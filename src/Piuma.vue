@@ -11,10 +11,11 @@ export default class Piuma extends Vue {
   @Prop({ required: false, default: 100 }) readonly quality!: number;
   @Prop({ required: false, default: 100 }) readonly height!: number;
   @Prop({ required: false, default: 100 }) readonly width!: number;
+  public static serverUrl: string = "https://piumaio";
 
   get url(): string {
     return (
-      this.$piumaServerUrl +
+      Piuma.serverUrl +
       "" +
       this.width +
       "_" +
