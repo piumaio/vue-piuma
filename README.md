@@ -31,6 +31,12 @@ export default {
 </template>
 ```
 
+You can also add the following properties
+
+- `alt`: alternate text for image
+- `title`: title of the image
+- `class`: class attribute for the image
+
 ## Test
 
 ```bash
