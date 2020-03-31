@@ -27,7 +27,7 @@ export default {
 
 ```html
 <template>
-  <piuma src="YOUR URL" height="YOUR_HEIGHT" width="YOUR_WIDTH" quality="YOUR_QUALITY" ></piuma>
+  <piuma src="YOUR URL" height="YOUR_HEIGHT" width="YOUR_WIDTH" quality="YOUR_QUALITY" />
 </template>
 ```
 
