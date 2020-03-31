@@ -6,10 +6,24 @@ Vue component for Piuma Image Optimizer
 ## Install
 
 ```bash
-yarn add vue-piuma
+yarn add https://github.com/piumaio/vue-piuma.git
 ```
 
 ## Usage
+
+```js
+import Piuma from 'vue-piuma'
+
+Piuma.serverUrl = 'https://arysol.it/piuma/'
+
+export default {
+  components: {
+    PrismEditor,
+    Piuma
+  },
+  // ....
+}
+```
 
 ```html
 <template>
