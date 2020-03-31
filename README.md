@@ -1,7 +1,7 @@
 # Vue-piuma
 [![codecov](https://codecov.io/gh/piumaio/vue-piuma/branch/master/graph/badge.svg)](https://codecov.io/gh/piumaio/vue-piuma) [![Build Status](https://travis-ci.org/piumaio/vue-piuma.svg?branch=feature%2Ftravis-codecov)](https://travis-ci.org/piumaio/vue-piuma)
 
-Vue component for Piuma Image Optimizer
+Vue component for Piuma Image Optimizer ✌🏻🌉
 
 ## Install
 
