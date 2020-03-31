@@ -13,7 +13,7 @@ yarn add vue-piuma
 
 ```vue
 <template>
-  <piuma src="YOUR URL" height="YOUR_HEIGHT" width="YOUR_WIDTH" quality="YOUR_QUALITY" ></vue-piuma>
+  <piuma src="YOUR URL" height="YOUR_HEIGHT" width="YOUR_WIDTH" quality="YOUR_QUALITY" ></piuma>
 </template>
 ```
 
