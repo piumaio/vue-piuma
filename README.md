@@ -37,6 +37,14 @@ You can also add the following properties
 - `title`: title of the image
 - `class`: class attribute for the image
 
+You can also use the `composeUrl` function to get a valid Piuma url
+
+```js
+Piuma.composeUrl("YOUR_URL", width, height, quality)
+```
+
+`width`, `height` and `quality` are optional
+
 ## Test
 
 ```bash
