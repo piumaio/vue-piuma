@@ -32,5 +32,11 @@ describe('ImagePlaceholder.vue', () => {
     expect(
       wrapper.findAll('img').at(0).attributes().title
     ).toEqual('title')
+  }),
+  it('renders expose a static method to compose url', () => {
+    (Piuma as any).serverUrl = "https://loremflickr.com/"
+    expect(
+      (Piuma as any).composeUrl('https://io.io/piuma.png', 500)
+    ).toEqual('https://loremflickr.com/500_0_100/https://io.io/piuma.png')
   })
 })

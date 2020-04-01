@@ -16,18 +16,21 @@ export default class Piuma extends Vue {
   @Prop({ required: false, default: 0 }) readonly width!: number;
   public static serverUrl: string = "https://piumaio";
 
-  get url(): string {
+  public static composeUrl(src: string, width: number = 0, height: number = 0, quality: number = 100): string {
     return (
       Piuma.serverUrl +
-      "" +
-      this.width +
+      width +
       "_" +
-      this.height +
+      height +
       "_" +
-      this.quality +
+      quality +
       "/" +
-      this.src
+      src
     );
+  }
+
+  get url(): string {
+    return Piuma.composeUrl(this.src, this.width, this.height, this.quality);
   }
 }
 </script>
